@@ -1,27 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Slacker News</title>
+  <link href="app.css" media="screen" rel="stylesheet"/>
+</head>
+<body>
+    <!-- This is where the page content goes -->
+<div class="wrapper">
 
-<form action ="/submit" method="post">
-  <label for="article_name">Article Name</label>
-    <input type="text" id="article_name" name="article_name"/><br>
+  <div class="navigation-container">
 
-  <label for="article_url">Article Url</label>
-    <input type="text" id="article_url" name="article_url" /><br>
+  <h4 class="nav">Slacker News</h4>
+    <ul class= "nav">
+      <li>
+        <a href="#">new</a>
+      </li>
+      <li>
+        <a href="#">comments</a>
+      </li>
+      |
+      <li>
+        <a href="#">show</a>
+      </li>
+      |
+      <li>
+        <a href="#">ask</a>
+      </li>
+      |
+      <li>
+        <a href="#">jobs</a>
+      </li>
+      |<li>
+        <a href="/submit">submit</a>
+      </li>
+    </ul>
+    <p class="login">login</p>
+  </div>
+<div class="main-container">
 
-  <label for="article_description">Article Description</label>
-    <textarea id="article_description" name="article_description"/></textarea><br>
+  <div class="error_messages">
+    <ul>
+    <% if @error_messages.length > 0 %>
+      <% @error_messages.each do |message|%>
+      <li><%= message%></li>
+      <% end %>
+      <% end %>
+    </ul>
 
-    <input type="submit" />
+  </div>
 
+  <form action ="/submit" method="post">
+    <label for="article_name">Article Name</label>
+      <input type="text" id="article_name" name="article_name"/><br>
 
-<!-- Article Name: <input type="text" name="article_name"><br>
-Article Url: <input type="text" name="article_url"><br>
-Article Description: <textarea rows="10" cols="180">
-Enter the description of the article.
-</textarea> -->
-</form>
+    <label for="article_url">Article Url</label>
+      <input type="text" id="article_url" name="article_url" /><br>
 
-<!-- <form action="/tasks" method="post">
-      <label for="task_name">New Task:</label>
-      <input type="text" id="task_name" name="task_name" />
+    <label for="article_description">Article Description</label>
+      <textarea id="article_description" name="article_description"/></textarea><br>
 
       <input type="submit" />
-  </body> -->
+  </form>
+
+</div>
