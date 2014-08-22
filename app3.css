@@ -1,0 +1,103 @@
+body {
+  max-width: 85%;
+  /*margin-left: 135px;*/
+}
+
+./*nav {
+  padding: 0;
+  margin: 0;
+}*/
+
+.nav h4 {
+  float: left;
+}
+
+.nav li {
+  display: inline-block;
+  list-style: none;
+
+}
+
+.navigation-container {
+  /*border-bottom: 1px solid #000000;*/
+  background: #ff6600;
+  margin-left: 135px;
+}
+
+.nav > li > a {
+  display: block;
+  padding: 5px;
+  color: black;
+  text-decoration: none;
+}
+
+.nav > li > a:hover {
+  color: #ffffff;
+}
+
+.nav p {
+  float: right;
+}
+
+body {
+  margin: 0;
+  font-family: 'arial', 'san-serif';
+  font-size: 14px;
+}
+
+
+.main-container {
+  /*width: 512px;*/
+  margin-left: 135px;
+  background: #f6f6ef;
+}
+
+/*.main-container > li > a {
+  display: block;
+  padding: 5px;
+  color: black;
+  text-decoration: none;
+}*/
+
+
+.search-result-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.search-result-title {
+  margin: 0;
+}
+
+.search-result-source {
+  display: block;
+  font-style: normal;
+  color: #009933;
+}
+
+.search-result-list li {
+  margin-bottom: 30px;
+  color: black;
+
+}
+
+.search-result-list> li > a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.search-result/*> li > a */{
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.search-result> li > a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}

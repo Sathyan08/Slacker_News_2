@@ -1,0 +1,67 @@
+body {
+  max-width: 85%;
+}
+
+
+.nav h4 {
+  float: left;
+  vertical-align: center;
+}
+
+.nav li {
+  display: inline-block;
+  list-style: none;
+  vertical-align: center;
+
+}
+
+.nav {
+  float: left;
+  padding-bottom: 10px;
+}
+
+
+.navigation-container {
+  background: #ff6600;
+  margin-left: 135px;
+  height: 5px;
+  padding-left: 5px;
+  margin-top: 30px;
+  vertical-align: center;
+}
+
+.nav > li > a {
+  display: block;
+  padding: 3px;
+  color: black;
+  text-decoration: none;
+}
+
+.nav > li > a:hover {
+  color: #ffffff;
+}
+
+.login {
+  float: right;
+  padding-right: 5px;
+  vertical-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: 'arial', 'san-serif';
+  font-size: 14px;
+}
+
+
+.main-container {
+  margin-left: 135px;
+  background: #f6f6ef;
+   padding-top: 50px;
+}
+
+.main-container>li > a {
+  color: black;
+  text-decoration: none;
+
+}

@@ -52,10 +52,9 @@
   </div> -->
 
   <div class="main-container">
-
     <ol>
       <% @articles.each do |article|  %>
-      <li><%= article["name"].capitalize %> <%= article["description"]%>  <a href="http://<%= article["url"]%>">(<%= article["url"]%>)</a></li>
+      <li><%= article["name"]%> - <%= article["description"]%>  <a href="http://<%= article["url"]%>" target="_blank">(<%= article["url"]%>)</a></li>
       <% end %>
 
 
