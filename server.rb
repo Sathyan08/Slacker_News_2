@@ -49,11 +49,11 @@ def validation_results(name, url, description)
   end
 
   if description_test.length == 0
-    error_messages << "The description was left blank.  Please input a description"
+    error_messages << "The description was left blank.  Please input a description."
   end
 
   if description_test.length > 20
-    error_messages << "The description field was greater than 20 characters.  Please input a description."
+    error_messages << "The description field was greater than 20 characters.  Please input a description that is twenty characters or less (not including spaces)."
   end
 
   error_messages
@@ -97,6 +97,9 @@ end
 
 get '/submit' do
   @error_messages = []
+  @name = ''
+  @url  = ''
+  @description = ''
 
   erb :submit
 end

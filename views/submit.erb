@@ -52,13 +52,13 @@
 
   <form action ="/submit" method="post">
     <label for="article_name">Article Name</label>
-      <input type="text" id="article_name" name="article_name"/><br>
+      <input type="text" id="article_name" name="article_name" value="<%= @name %>" /><br>
 
     <label for="article_url">Article Url</label>
-      <input type="text" id="article_url" name="article_url" /><br>
+      <input type="text" id="article_url" name="article_url" value="<%= @url %>" /><br>
 
     <label for="article_description">Article Description</label>
-      <textarea id="article_description" name="article_description"/></textarea><br>
+      <textarea id="article_description" name="article_description" value="<%= @description %>" /><%= @description %></textarea><br>
 
       <input type="submit" />
   </form>
